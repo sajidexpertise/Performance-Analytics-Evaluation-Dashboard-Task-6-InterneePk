@@ -15,6 +15,12 @@ This project evaluates and tracks intern performance through a metrics-based sys
 
 The project is designed as a realistic portfolio implementation of an internship performance monitoring workflow. The included dataset is synthetic and contains no confidential internship records.
 
+## 🌐 Live Project
+
+- **Live Dashboard:** [Open the interactive dashboard](https://sajidexpertise.github.io/Performance-Analytics-Evaluation-Dashboard-Task-6-InterneePk/)
+- **Portfolio:** [sajidexpertise.vercel.app](https://sajidexpertise.vercel.app/)
+- **LinkedIn:** [linkedin.com/in/sajidexpertise](https://www.linkedin.com/in/sajidexpertise)
+
 ## Task 6 Requirement Mapping
 
 | Guideline requirement | Project implementation |
@@ -24,6 +30,12 @@ The project is designed as a realistic portfolio implementation of an internship
 | Design KPIs: mentor feedback | `mentor_feedback` score (1–5), KPI card, skills radar, feedback view, rankings and comments |
 | Automate data extraction | SQLite database + `sql/monthly_metrics.sql` + `scripts/extract_monthly_metrics.py` |
 | Create monthly reports | Eight supervisor HTML reports + interactive Generate Monthly Report button |
+
+## 📊 Dashboard Preview
+
+![Intern Performance Analytics Dashboard](outputs/dashboard-screenshot.png)
+
+> **Intern Performance Analytics & Evaluation Dashboard** — Task 6 of the Internee.pk Data Analyst Internship.
 
 ## Dashboard Design
 
