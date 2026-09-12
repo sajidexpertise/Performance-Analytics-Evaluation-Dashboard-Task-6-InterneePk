@@ -1,0 +1,23 @@
+field,description,type_or_range
+intern_id,Unique intern identifier,Text
+intern_name,Intern display name,Text
+department,Internship functional area,Category
+project_name,Project linked to the task,Text
+task_type,Type of work performed,Category
+assigned_date,Task assignment date,YYYY-MM-DD
+due_date,Expected due date,YYYY-MM-DD
+completed_date,Actual completion date,YYYY-MM-DD or blank
+status,Task state,Completed / Overdue / In Progress / Not Started
+planned_days,Planned task duration,Days
+completion_days,Actual completion time for finished work,Days
+on_time,Whether task met planned due date,1 / 0 / blank
+project_quality,Project quality review score,1-5
+mentor_feedback,Mentor feedback rating,1-5
+technical_skills,Technical competency rating,1-5
+communication,Communication competency rating,1-5
+problem_solving,Problem-solving competency rating,1-5
+teamwork,Teamwork competency rating,1-5
+punctuality,Timeliness/punctuality competency rating,1-5
+mentor_comment,Qualitative mentor review,Text
+mentor,Mentor label,Text
+month,Supervisor reporting month,YYYY-MM

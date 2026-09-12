@@ -1,0 +1,25 @@
+Task 6 Dashboard QA
+===================
+PASS 6 KPI cards
+PASS dashboard contains 10+ analytical panels
+PASS monthly grouped KPI SVG chart
+PASS skills/feedback radar SVG chart
+PASS completion-time/quality/feedback bubble SVG chart
+PASS ranking table rows
+PASS Sajid Ali original profile image visible
+PASS department filter changes KPI values
+PASS Sajid Ali available in Data Analytics intern filter
+PASS reset restores August 2026 default (120 tasks assigned)
+PASS light theme switch
+PASS dark theme switch
+PASS Tasks & Projects view
+PASS task table populated
+PASS Reports view
+PASS 8 monthly report cards
+PASS Generate Monthly Report modal
+PASS mobile menu visible
+PASS mobile dashboard navigation
+PASS no page-level horizontal overflow at 390px width
+
+Result: 18/18 browser interaction checks passed.
+Data validator: 16/16 checks passed.

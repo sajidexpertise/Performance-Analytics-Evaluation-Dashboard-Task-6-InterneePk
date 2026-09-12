@@ -1,0 +1,31 @@
+﻿intern_id,name,department,mentor,join_date,location,education,profile_type
+INT001,Sajid Ali,Data Analytics,Internee.pk Mentor,2026-01-05,"Sindh, Pakistan","BS Information Technology – Shah Abdul Latif University, Khairpur",Portfolio author / sample intern
+INT002,Ayesha Khan,Power BI & BI,Mentor – Business Intelligence,2026-01-05,Sukkur,BBA,Synthetic portfolio intern
+INT003,Rehan Mehta,Machine Learning,Mentor – Machine Learning,2026-01-05,Islamabad,BS Data Science,Synthetic portfolio intern
+INT004,Zainab Fatima,Web Development,Mentor – Web Development,2026-01-05,Lahore,BS Software Engineering,Synthetic portfolio intern
+INT005,Arjun Singh,Business Analysis,Mentor – Business Analysis,2026-01-05,Hyderabad,BS Computer Science,Synthetic portfolio intern
+INT006,Hira Memon,IT Support,Mentor – IT Support,2026-01-05,Karachi,BS Information Technology,Synthetic portfolio intern
+INT007,Hamza Ahmed,Data Analytics,Mentor – Data Analytics,2026-01-05,"Sindh, Pakistan",BBA,Synthetic portfolio intern
+INT008,Mariam Baloch,Power BI & BI,Mentor – Business Intelligence,2026-01-05,Sukkur,BS Data Science,Synthetic portfolio intern
+INT009,Ali Shah,Machine Learning,Mentor – Machine Learning,2026-01-05,Islamabad,BS Software Engineering,Synthetic portfolio intern
+INT010,Neha Hussain,Web Development,Mentor – Web Development,2026-01-05,Lahore,BS Computer Science,Synthetic portfolio intern
+INT011,Sara Malik,Business Analysis,Mentor – Business Analysis,2026-01-05,Hyderabad,BS Information Technology,Synthetic portfolio intern
+INT012,Usman Ali,IT Support,Mentor – IT Support,2026-01-05,Karachi,BBA,Synthetic portfolio intern
+INT013,Fatima Noor,Data Analytics,Mentor – Data Analytics,2026-01-05,"Sindh, Pakistan",BS Data Science,Synthetic portfolio intern
+INT014,Bilal Shaikh,Power BI & BI,Mentor – Business Intelligence,2026-01-05,Sukkur,BS Software Engineering,Synthetic portfolio intern
+INT015,Iqra Khan,Machine Learning,Mentor – Machine Learning,2026-01-05,Islamabad,BS Computer Science,Synthetic portfolio intern
+INT016,Danish Raza,Web Development,Mentor – Web Development,2026-01-05,Lahore,BS Information Technology,Synthetic portfolio intern
+INT017,Zoya Malik,Business Analysis,Mentor – Business Analysis,2026-01-05,Hyderabad,BBA,Synthetic portfolio intern
+INT018,Fahad Ali,IT Support,Mentor – IT Support,2026-01-05,Karachi,BS Data Science,Synthetic portfolio intern
+INT019,Sana Noor,Data Analytics,Mentor – Data Analytics,2026-01-05,"Sindh, Pakistan",BS Software Engineering,Synthetic portfolio intern
+INT020,Adeel Ahmed,Power BI & BI,Mentor – Business Intelligence,2026-01-05,Sukkur,BS Computer Science,Synthetic portfolio intern
+INT021,Mahnoor Baloch,Machine Learning,Mentor – Machine Learning,2026-01-05,Islamabad,BS Information Technology,Synthetic portfolio intern
+INT022,Saad Shah,Web Development,Mentor – Web Development,2026-01-05,Lahore,BBA,Synthetic portfolio intern
+INT023,Rida Memon,Business Analysis,Mentor – Business Analysis,2026-01-05,Hyderabad,BS Data Science,Synthetic portfolio intern
+INT024,Hassan Shaikh,IT Support,Mentor – IT Support,2026-01-05,Karachi,BS Software Engineering,Synthetic portfolio intern
+INT025,Anum Hussain,Data Analytics,Mentor – Data Analytics,2026-01-05,"Sindh, Pakistan",BS Computer Science,Synthetic portfolio intern
+INT026,Farhan Qureshi,Power BI & BI,Mentor – Business Intelligence,2026-01-05,Sukkur,BS Information Technology,Synthetic portfolio intern
+INT027,Mehak Khan,Machine Learning,Mentor – Machine Learning,2026-01-05,Islamabad,BBA,Synthetic portfolio intern
+INT028,Taha Raza,Web Development,Mentor – Web Development,2026-01-05,Lahore,BS Data Science,Synthetic portfolio intern
+INT029,Nimra Malik,Business Analysis,Mentor – Business Analysis,2026-01-05,Hyderabad,BS Software Engineering,Synthetic portfolio intern
+INT030,Arham Ahmed,IT Support,Mentor – IT Support,2026-01-05,Karachi,BS Computer Science,Synthetic portfolio intern

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Task 6 – Performance Evaluation Metrics dashboard for Internee.pk. Tracks task completion time, project quality and mentor feedback with monthly supervisor reporting.">
+  <title>Intern Performance Analytics | Task 6 – Internee.pk</title>
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <div class="brand-block">
+      <div class="brand-icon">◆</div>
+      <div><strong>InternTrack</strong><span>Internee.pk</span><small>Empowering Tomorrow's Talent</small></div>
+    </div>
+    <nav class="side-nav" aria-label="Dashboard sections">
+      <button class="nav-item active" data-view="dashboard"><span>⌂</span>Dashboard</button>
+      <button class="nav-item" data-view="interns"><span>♙</span>Interns & Profiles</button>
+      <button class="nav-item" data-view="tasks"><span>▣</span>Tasks & Projects</button>
+      <button class="nav-item" data-view="performance"><span>▥</span>Performance</button>
+      <button class="nav-item" data-view="feedback"><span>▤</span>Mentor Feedback</button>
+      <button class="nav-item" data-view="reports"><span>▧</span>Reports</button>
+      <button class="nav-item" data-view="analytics"><span>▦</span>Analytics</button>
+      <button class="nav-item" data-view="notifications"><span>♢</span>Notifications <b class="badge">3</b></button>
+      <button class="nav-item" data-view="settings"><span>⚙</span>Settings</button>
+    </nav>
+    <div class="author-card">
+      <img src="assets/sajid-ali-professional.jpg" alt="Sajid Ali">
+      <strong>Sajid Ali</strong>
+      <span>Data Analyst Intern</span>
+      <em>Internee.pk</em>
+      <p>“Turning data into better opportunities.”</p>
+    </div>
+    <div class="future-card"><div class="plant">⌁</div><strong>Better Interns<br>Brighter Futures</strong><span>Internee.pk</span></div>
+  </aside>
+
+  <main class="app-shell">
+    <header class="topbar">
+      <button class="mobile-menu" id="mobileMenu" aria-label="Open navigation">☰</button>
+      <div class="title-wrap"><div class="analytics-mark">⌁</div><div><h1>Intern Performance Analytics</h1><p>Track Progress <b>•</b> Measure Impact <b>•</b> Build Future Talent</p></div></div>
+      <div class="top-actions">
+        <label class="search-box"><span>⌕</span><input id="globalSearch" placeholder="Search interns, tasks, projects…"><kbd>Ctrl K</kbd></label>
+        <button class="theme-toggle" id="themeToggle" title="Switch light/dark mode"><span>☀</span><span>◐</span></button>
+        <button class="bell" data-view-link="notifications" title="Notifications">♢<b>3</b></button>
+        <div class="profile-mini"><img src="assets/sajid-ali-professional.jpg" alt="Sajid Ali"><div><b>Sajid Ali</b><span>Data Analyst Intern</span><em>Internee.pk</em></div><span>⌄</span></div>
+      </div>
+    </header>
+
+    <section class="filterbar" aria-label="Dashboard filters">
+      <label><span>Reporting Month</span><select id="monthFilter"></select></label>
+      <label><span>Department</span><select id="departmentFilter"></select></label>
+      <label><span>Intern</span><select id="internFilter"></select></label>
+      <label><span>Project</span><select id="projectFilter"></select></label>
+      <button class="btn primary" id="applyFilters">Apply Filters</button>
+      <button class="btn" id="resetFilters">Reset</button>
+      <button class="btn icon-btn" id="exportReport">⇩ <span>Export Report</span></button>
+      <button class="btn success" id="generateReport">▧ <span>Generate Monthly Report</span></button>
+    </section>
+
+    <section class="view active" id="view-dashboard">
+      <div class="kpi-grid" id="kpiGrid"></div>
+
+      <div class="dashboard-grid">
+        <article class="panel kpi-comparison span-6"><div class="panel-head"><h2>Monthly KPI Performance Comparison</h2><button class="info" title="Completion rate, project quality and mentor feedback by month">i</button></div><div id="monthlyKpiChart" class="svg-chart"></div></article>
+        <article class="panel dept-completion span-3"><div class="panel-head"><h2>Task Completion by Department</h2><button class="info" title="Completed, in-progress, overdue and not-started task counts">i</button></div><div id="departmentStacked"></div></article>
+        <article class="panel skills-radar span-3"><div class="panel-head"><h2>Skills & Mentor Feedback</h2><button class="info" title="Selected intern compared with department average">i</button></div><div id="skillsRadar" class="svg-chart"></div></article>
+        <article class="panel top-performer span-2 row-2" id="topPerformer"></article>
+
+        <article class="panel activity-heat span-3"><div class="panel-head"><h2>Monthly Activity Heatmap</h2><button class="info" title="Task activity intensity by week and weekday">i</button></div><div id="activityHeatmap"></div></article>
+        <article class="panel bubble-panel span-4"><div class="panel-head"><h2>Task Completion vs Quality vs Feedback</h2><button class="info" title="Bubble size represents mentor feedback; color represents department">i</button></div><div id="bubbleChart" class="svg-chart"></div></article>
+        <article class="panel distribution-panel span-5"><div class="panel-head"><h2>Performance Distribution</h2><button class="info" title="Interns classified by composite performance score">i</button></div><div id="performanceDistribution" class="distribution-grid"></div></article>
+
+        <article class="panel ranking span-6"><div class="panel-head"><h2>🏆 Intern Performance Ranking</h2><button class="link-btn" data-view-link="interns">View All Interns →</button></div><div class="table-scroll"><table><thead><tr><th>#</th><th>Intern Name</th><th>Department</th><th>Tasks</th><th>Completion</th><th>Quality</th><th>Feedback</th><th>Status</th></tr></thead><tbody id="rankingBody"></tbody></table></div></article>
+        <article class="panel recent span-3"><div class="panel-head"><h2>Recent Activity</h2><button class="link-btn" data-view-link="performance">View All →</button></div><div id="recentActivity"></div></article>
+        <article class="panel deadlines span-3"><div class="panel-head"><h2>Upcoming Deadlines</h2><button class="link-btn" data-view-link="tasks">View All →</button></div><div id="deadlineList"></div></article>
+        <article class="panel supervisor span-2"><div class="panel-head"><h2>▧ Monthly Supervisor Summary</h2></div><div id="supervisorSummary"></div></article>
+      </div>
+    </section>
+
+    <section class="view" id="view-interns">
+      <div class="section-heading"><div><h2>Interns & Profiles</h2><p>Review performance KPIs for all tracked interns.</p></div><input class="inline-search" id="internSearch" placeholder="Search interns…"></div>
+      <div class="profile-grid" id="internProfileGrid"></div>
+    </section>
+
+    <section class="view" id="view-tasks">
+      <div class="section-heading"><div><h2>Tasks & Projects</h2><p>Task-level performance register with completion-time, quality and feedback metrics.</p></div><button class="btn" id="downloadTasks">Download Filtered CSV</button></div>
+      <div class="panel"><div class="table-tools"><input id="taskSearch" placeholder="Search task, intern or project…"><select id="taskStatusFilter"><option value="All">All Statuses</option><option>Completed</option><option>Overdue</option><option>In Progress</option><option>Not Started</option></select></div><div class="table-scroll"><table><thead><tr><th>Task ID</th><th>Intern</th><th>Department</th><th>Project</th><th>Status</th><th>Assigned</th><th>Due</th><th>Completion Time</th><th>Quality</th><th>Feedback</th></tr></thead><tbody id="taskTableBody"></tbody></table></div></div>
+    </section>
+
+    <section class="view" id="view-performance"><div class="section-heading"><div><h2>Performance Review</h2><p>Detailed KPI analysis centered on the three required Task 6 measures.</p></div></div><div id="performanceCards" class="analysis-card-grid"></div></section>
+    <section class="view" id="view-feedback"><div class="section-heading"><div><h2>Mentor Feedback</h2><p>Feedback ratings, competency averages and review comments.</p></div></div><div id="feedbackContent" class="analysis-card-grid"></div></section>
+    <section class="view" id="view-reports"><div class="section-heading"><div><h2>Monthly Supervisor Reports</h2><p>Automated monthly summaries generated from task-level data.</p></div><button class="btn success" id="generateReport2">Generate Current Report</button></div><div id="reportCards" class="report-grid"></div></section>
+    <section class="view" id="view-analytics"><div class="section-heading"><div><h2>Advanced Analytics</h2><p>Department benchmarking, completion-time distribution and KPI relationships.</p></div></div><div id="analyticsContent" class="analysis-card-grid"></div></section>
+    <section class="view" id="view-notifications"><div class="section-heading"><div><h2>Notifications</h2><p>Supervisor attention items derived from current performance data.</p></div></div><div id="notificationList" class="notification-list"></div></section>
+    <section class="view" id="view-settings"><div class="settings-grid"><div class="panel author-settings"><img src="assets/sajid-ali-professional.jpg" alt="Sajid Ali"><div><h2>Sajid Ali</h2><p>Data Analyst Intern – Internee.pk</p><p>BS Information Technology, Shah Abdul Latif University, Khairpur</p></div></div><div class="panel"><h2>Dashboard Settings</h2><p>Dark mode is the default visual theme. Use the switch below for a light view.</p><button class="btn" id="themeToggle2">Toggle Light / Dark Theme</button><button class="btn" id="printDashboard">Print Dashboard</button></div><div class="panel"><h2>Data & Ethics Note</h2><p>This submission uses a realistic synthetic portfolio dataset created to demonstrate the required KPI evaluation workflow. No confidential internship records are included.</p></div></div></section>
+
+    <footer><span>© 2026 InternTrack (Internee.pk) | Task 6 – Performance Evaluation Metrics</span><span>Data • People • Progress • A Brighter Future ♥</span></footer>
+  </main>
+
+  <div class="modal" id="modal" role="dialog" aria-modal="true"><div class="modal-card"><button id="modalClose" class="modal-close">×</button><div id="modalContent"></div></div></div>
+  <div class="toast" id="toast"></div>
+  <script src="src/data.js"></script>
+  <script src="src/app.js"></script>
+</body>
+</html>

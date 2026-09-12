@@ -1,0 +1,4 @@
+# No third-party packages are required for the included automation scripts.
+# Python 3.10+ recommended.
+# Dashboard: HTML + CSS + JavaScript (offline / no CDN dependency)
+# Automation: Python standard library + SQLite

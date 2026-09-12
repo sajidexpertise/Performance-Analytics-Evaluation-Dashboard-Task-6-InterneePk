@@ -1,0 +1,9 @@
+﻿deadline_id,task,intern_id,intern_name,department,due_date,priority
+DL01,Executive Analytics Report,INT007,Hamza Ahmed,Data Analytics,2026-08-13,Medium
+DL02,Support Ticket Analysis,INT018,Fahad Ali,IT Support,2026-08-15,Medium
+DL03,Knowledge Base Project,INT030,Arham Ahmed,IT Support,2026-08-15,Low
+DL04,Analytics Portal,INT010,Neha Hussain,Web Development,2026-08-16,High
+DL05,System Health Review,INT012,Usman Ali,IT Support,2026-08-18,Medium
+DL06,Asset Audit,INT018,Fahad Ali,IT Support,2026-08-18,Medium
+DL07,Requirements Matrix,INT029,Nimra Malik,Business Analysis,2026-08-21,Low
+DL08,Anomaly Detection Study,INT015,Iqra Khan,Machine Learning,2026-08-23,High
