@@ -31,7 +31,7 @@ The project is designed as a realistic portfolio implementation of an internship
 | Automate data extraction | SQLite database + `sql/monthly_metrics.sql` + `scripts/extract_monthly_metrics.py` |
 | Create monthly reports | Eight supervisor HTML reports + interactive Generate Monthly Report button |
 
-## 📊 Dashboard Preview
+## 📊 Dashboard Preview 
 
 ![Intern Performance Analytics Dashboard](outputs/dashboard-screenshot.png)
 
